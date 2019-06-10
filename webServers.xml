@@ -1,0 +1,16 @@
+<application>
+  <component name="WebServers">
+    <sftpAdvancedGlobalOptions>
+      <SftpAdvancedOptions hostKeyCheckingLevel="NO">
+        <option name="hostKeyCheckingLevel" value="NO" />
+      </SftpAdvancedOptions>
+    </sftpAdvancedGlobalOptions>
+    <option name="servers">
+      <webServer id="ae4c035e-0f43-4c50-bb6f-f6a214459c21" name="tinker.lzc@140.205.246.14:80" url="http:///">
+        <fileTransfer host="140.205.246.14" port="80" accessType="SFTP">
+          <option name="port" value="80" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</application>

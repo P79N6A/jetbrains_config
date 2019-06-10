@@ -1,0 +1,47 @@
+<toolSet name="External Tools">
+  <tool name="pylint" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="$USER_HOME$/.pyenv/versions/anaconda2-5.2.0/bin/pylint" />
+      <option name="PARAMETERS" value="-j 0 --init-hook &quot;import sys;assert sys.version_info.major==2;reload(sys);sys.setdefaultencoding('utf-8')&quot; --msg-template=&quot;{abspath}:{line}: [{msg_id}({symbol}), {obj}] {msg}&quot; --rcfile=$ProjectFileDir$/pylintrc $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Workspaces/python/myodps" />
+    </exec>
+  </tool>
+  <tool name="flake8" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="$USER_HOME$/.pyenv/versions/anaconda2-5.2.0/bin/flake8" />
+      <option name="PARAMETERS" value="--ignore E111,E114,E121 --max-line-length=120 $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+    <filter>
+      <option name="NAME" value="No name" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value="$FILE_PATH$\:$LINE$\:$COLUMN$\:.*" />
+    </filter>
+  </tool>
+  <tool name="yapf" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="$USER_HOME$/.pyenv/versions/anaconda2-5.2.0/bin/yapf" />
+      <option name="PARAMETERS" value="-rpi --style=$ProjectFileDir$/style.yapf $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+    <filter>
+      <option name="NAME" value="No name" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value="$FILE_PATH$" />
+    </filter>
+  </tool>
+  <tool name="isort" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="$USER_HOME$/.pyenv/versions/anaconda2-5.2.0/bin/isort" />
+      <option name="PARAMETERS" value="-ls -y -rc $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="upload_code" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$USER_HOME$/.pyenv/versions/anaconda2-5.2.0/bin/python" />
+      <option name="PARAMETERS" value="-m tools.upload_code" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>
