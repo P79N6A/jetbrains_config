@@ -6,9 +6,13 @@
           <option name="url" value="ssh://git@git.dianpingoa.com/ba-csc/csc-backend-web.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.alibaba-inc.com:navi_miner/poi-navi-eval.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/Workspaces/meituan/duty" />
+    <option name="cloneParentDir" value="$USER_HOME$/Workspaces/amap" />
   </component>
   <component name="VcsApplicationSettings">
     <option name="MANAGE_IGNORE_FILES" value="true" />
