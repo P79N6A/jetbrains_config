@@ -8,6 +8,7 @@
       <mapping ext="csv" type="PLAIN_TEXT" />
       <mapping ext="jinjia" type="PLAIN_TEXT" />
       <mapping ext="npz" type="PLAIN_TEXT" />
+      <mapping ext="x" type="PLAIN_TEXT" />
       <mapping ext="jinja" type="PLAIN_TEXT" />
       <mapping ext="data" type="PLAIN_TEXT" />
     </extensionMap>
